@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    app: nginx
+  ports:
+  - protocol: TCP
+    port: 80
+  type: LoadBalancer
+  # Note the type here is "load-balancer" but there are far more options for exposure.  In minikube our options are limited.
