@@ -1,7 +1,7 @@
-   apiVersion: v1
-   kind: ConfigMap
-   metadata:
-     name: postgres-configuration
-     namespace: default
-   data:
-     POSTGRES_PASSWORD: thisisstillnotreallysecurebutyougettheidea
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configuration
+  namespace: default
+data:
+  POSTGRES_PASSWORD: thisisstillnotreallysecurebutyougettheidea
